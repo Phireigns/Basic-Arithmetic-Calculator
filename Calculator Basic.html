@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rai Phirens 55742987 Arithmetic Calculator</title>
+<script>
+
+var memory;
+
+function cal()
+{
+   result = eval(document.forms[0].elements[0].value);
+   document.forms[0].elements[2].value = result;   
+}
+
+function pow()
+{
+	result = eval(document.forms[0].elements[0].value);
+    document.forms[0].elements[2].value = result * result;   
+}
+
+function square_root()
+{
+	result = eval(document.forms[0].elements[0].value);
+	document.forms[0].elements[2].value = Math.sqrt(result);   
+}
+
+function reciprical()
+{
+   result = eval(document.forms[0].elements[0].value);
+   document.forms[0].elements[2].value = 1/(result);
+}
+
+function factorial() 
+{ 
+	result = eval(document.forms[0].elements[0].value);
+	
+	var num = result;
+	var fact= 1;
+
+	for(var i=num; i>=1; i--)
+	{
+		fact = fact *i;
+	}
+	document.forms[0].elements[2].value = fact;
+}
+
+function mplus() 
+{
+	result = eval(document.forms[0].elements[0].value);
+	memory = result;
+}
+
+function mr() 
+{
+	document.forms[0].elements[0].value = memory;
+}
+
+function mc() 
+{
+	result = eval(document.forms[0].elements[0].value);
+	memory = 0;
+}
+</script>
+</head>
+
+<body>
+<h1>Rai Phirens 55742987 Arithmetic Calculator</h1>
+<form>
+<p>Equation: <input type="text" size="30" /> <input type="button" value="Calculate" onclick="cal()"/></p>
+<p>Answer: <input type="text" size="30"  />
+		<input type="button" value="X2" onclick="pow()"/>
+		<input type="button" value="X!" onclick="factorial()"/>
+		<input type="button" value="1/X" onclick="reciprical()"/>
+		<input type="button" value="√" onclick="square_root()"/>
+		<input type="button" value="M+" onclick="mplus()"/>
+		<input type="button" value="MR" onclick="mr()"/>
+		<input type="button" value="MC" onclick="mc()"/></p>
+
+</form>
+</body>
+
+</html>
