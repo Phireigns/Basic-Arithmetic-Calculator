@@ -1,4 +1,4 @@
-<h1>Restaurant Guide App</h1>
+<h1>Basic Calculator</h1>
 
 <h2>Description</h2>
 This project is an HTML document that implements an arithmetic calculator using JavaScript. It allows users to enter equations, perform calculations, and includes memory functionality. The calculator supports basic arithmetic operations, calculates squares, square roots, and factorials, and provides memory storage and retrieval.
